@@ -99,7 +99,7 @@ const styles = StyleSheet.create({
   },
   content: {
     paddingHorizontal: scaledSize(16),
-    gap: scaledY(24),
+    gap: scaledY(16),
     paddingBottom: 100,
   },
   flatListInnerContainer: {
