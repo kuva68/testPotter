@@ -12,8 +12,10 @@ import {BottomTable} from './components/BottomTable';
 import {House} from '../../types/types';
 import {Icons} from '../../constants/icons';
 import FastImage from 'react-native-fast-image';
+import {RootStackScreenProps} from '../../navigation/types';
+import {EnScreens} from '../../types/enums';
 
-const HomeScreen: React.FC = () => {
+const HomeScreen: React.FC<RootStackScreenProps<EnScreens.HOME>> = () => {
   const {characters, currentCharacter, loading} = useAppStore();
 
   const {failures, successList} = useAppSettingsStore();

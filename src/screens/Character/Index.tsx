@@ -8,8 +8,12 @@ import {useAppSettingsStore} from '../../store/appSettingsStore';
 import {Icons} from '../../constants/icons';
 import TextField from '../../components/TextField';
 import FastImage from 'react-native-fast-image';
+import {RootStackScreenProps} from '../../navigation/types';
+import {EnScreens} from '../../types/enums';
 
-const CharacterScreen: React.FC = () => {
+const CharacterScreen: React.FC<
+  RootStackScreenProps<EnScreens.CHARACTER_SCREEN>
+> = () => {
   const {currentCharacter} = useAppStore();
   const characterData = [
     {title: 'House', value: currentCharacter?.house},
